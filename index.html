@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Agentic Labs · Des agents qui comprennent comment le monde change</title>
+<meta name="description" content="Recherche ouverte sur l’IA agentique et les modèles du monde, conçue avec et pour les communautés.">
+<meta name="theme-color" content="#F7F5F0">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="AI Agentic Labs">
+<meta property="og:description" content="Recherche ouverte sur l’IA agentique et les modèles du monde, conçue avec et pour les communautés.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🧭%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+:root{
+  --paper:#F7F5F0; --white:#FFFFFF; --ink:#14161A; --muted:#5A5F66; --soft:#3A3F46;
+  --line:#E4E0D6; --accent:#1F6F5B;
+  --head:'Space Grotesk',system-ui,sans-serif; --body:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:16px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-text-size-adjust:100%}
+a{color:var(--accent)}
+a:hover{color:var(--ink)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--head);margin:0}
+p{margin:0}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--paper);padding:8px 14px;border-radius:6px;z-index:10}
+.skip:focus{left:8px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+.band{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.row{display:flex;flex-wrap:wrap;gap:24px}
+.cols{display:flex;flex-wrap:wrap;gap:48px}
+.cols>div{flex:1 1 360px}
+
+header .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;padding-top:28px;padding-bottom:28px}
+.brand{font-family:var(--head);font-weight:700;font-size:20px}
+nav{display:flex;gap:24px;font-size:15px}
+
+.hero{padding-top:96px;padding-bottom:88px}
+.eyebrow{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-weight:700;font-size:clamp(2.25rem,6vw,4rem);line-height:1.05;margin:16px 0 24px;max-width:880px}
+.lead{font-size:clamp(1.15rem,2.2vw,1.375rem);max-width:680px;margin-bottom:36px;color:var(--soft)}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:12px 28px;border-radius:8px;font-weight:500;text-decoration:none}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--ink);color:#fff}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+
+section{padding:88px 0}
+section.tight{padding:72px 0}
+h2{font-weight:700;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:16px}
+.band h2.m32,h2.m32{margin-bottom:32px}
+.props>div{flex:1 1 220px}
+.num{color:var(--accent);font-family:var(--head);font-weight:700}
+.props strong{font-weight:500}
+.text{color:var(--soft);max-width:760px}
+.text+.text{margin-top:16px}
+
+.card{flex:1 1 220px;border:1px solid var(--line);border-radius:12px;padding:28px;background:var(--paper)}
+.card h3{font-size:22px;margin-bottom:8px}
+.card p{color:var(--soft)}
+
+.belief{background:var(--ink);color:var(--paper)}
+.belief p{font-family:var(--head);font-weight:500;font-size:clamp(1.5rem,3.6vw,2.25rem);line-height:1.25;max-width:840px}
+
+.muted{color:var(--muted)}
+.strong{font-weight:500}
+footer{border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+footer .wrap{padding-top:28px;padding-bottom:28px}
+
+@media (max-width:640px){
+  .wrap{padding:0 20px}
+  .hero{padding-top:56px;padding-bottom:56px}
+  section{padding:56px 0}
+  section.tight{padding:48px 0}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header>
+  <div class="wrap">
+    <div class="brand">AI Agentic Labs</div>
+    <nav aria-label="Navigation principale">
+      <a href="#approche">Approche</a>
+      <a href="#piliers">Piliers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+  <div class="wrap hero">
+    <div class="eyebrow">Laboratoire de recherche appliquée</div>
+    <h1>Des agents qui comprennent comment le monde change.</h1>
+    <p class="lead">Recherche ouverte sur l’IA agentique et les modèles du monde, conçue avec et pour les communautés.</p>
+    <div class="row" style="gap:16px">
+      <a class="btn btn-primary" href="#contact">Travailler avec nous</a>
+      <a class="btn btn-ghost" href="#approche">Notre approche</a>
+    </div>
+  </div>
+
+  <div class="band">
+    <div class="wrap tight" style="padding-top:72px;padding-bottom:72px">
+      <h2 class="m32">Nous construisons des systèmes d’IA qui</h2>
+      <div class="row props">
+        <div><div class="num">01</div><strong>Apprennent une représentation de leur environnement</strong></div>
+        <div><div class="num">02</div><strong>Prédisent les conséquences de leurs actions</strong></div>
+        <div><div class="num">03</div><strong>Planifient dans l’incertitude</strong></div>
+        <div><div class="num">04</div><strong>Restent mesurables et sûrs</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="approche">
+    <div class="wrap cols">
+      <div>
+        <h2>Le problème</h2>
+        <p class="text">Les modèles de langage sont puissants, mais ils n’apprennent pas comment leurs propres actions modifient l’état du monde. Des agents fiables ont besoin de plus que du texte.</p>
+      </div>
+      <div>
+        <h2>Notre approche</h2>
+        <p class="text">Nous entraînons des modèles du monde qui apprennent des représentations abstraites d’environnements bruités et prédisent dans l’espace de représentation, puis s’en servent pour planifier. Nous évaluons là où le succès peut être mesuré&nbsp;: jeux, environnements simulés et marchés non stationnaires.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="band" id="piliers">
+    <section>
+      <div class="wrap">
+        <h2 class="m32">Quatre piliers</h2>
+        <div class="row">
+          <div class="card"><h3>Recherche</h3><p>Agents et modèles du monde. Articles, bancs d’essai et résultats négatifs ouverts.</p></div>
+          <div class="card"><h3>Développement</h3><p>Outils et prototypes ouverts&nbsp;: environnements, chaînes de traitement et implémentations de référence.</p></div>
+          <div class="card"><h3>Intégration</h3><p>Déploiement avec des communautés partenaires, pour transformer la recherche en systèmes utilisables.</p></div>
+          <div class="card"><h3>Formation</h3><p>Programmes, ateliers et ressources en français pour former chercheurs, ingénieurs et communautés à l’IA agentique et aux modèles du monde.</p></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>Par où nous commençons</h2>
+      <p class="text">Notre premier cycle de recherche utilise les marchés financiers comme banc d’essai&nbsp;: bruités, adverses et non stationnaires. La question&nbsp;: un modèle du monde appris améliore-t-il les décisions d’un agent lorsque l’environnement ne cesse de changer&nbsp;?</p>
+      <p class="text">Ce que nous apprenons s’applique partout où il faut décider en s’adaptant au changement&nbsp;: énergie, agriculture, logistique, santé.</p>
+    </div>
+  </section>
+
+  <div class="band">
+    <section class="tight" style="padding:72px 0">
+      <div class="wrap">
+        <h2>Une voix francophone</h2>
+        <p class="text">La recherche en IA se fait surtout en anglais. Nous travaillons en français pour ouvrir ce domaine aux communautés francophones et en devenir une référence crédible.</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="belief">
+    <div class="wrap" style="padding-top:96px;padding-bottom:96px">
+      <p>Des agents sûrs commencent par comprendre le monde, pas seulement le décrire.</p>
+    </div>
+  </div>
+
+  <section id="contact">
+    <div class="wrap cols">
+      <div>
+        <h2>Construisons ensemble</h2>
+        <p class="text">Chercheurs, ingénieurs et partenaires communautaires sont les bienvenus.</p>
+        <p class="strong" style="margin-top:16px"><a href="mailto:nathanbangwa243@gmail.com">nathanbangwa243@gmail.com</a></p>
+        <p class="muted">Lubumbashi, RD Congo</p>
+      </div>
+      <div>
+        <h2>Équipe</h2>
+        <p class="strong">Nathan I.L. Bangwa</p>
+        <p class="muted">Informaticien · Ingénieur en IA · Architecte de solutions</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 AI Agentic Labs</div>
+</footer>
+</body>
+</html>
